@@ -4,8 +4,6 @@ package cn.lin.code.util;
 
 /**
  * @Description:主要功能: 类型转换类
- * @Prject: CommonUtilLibrary
- * @Package: com.jingewenku.abrahamcaijin.commonutil
  * @author: wxl
  * @date: 2017年09月16日 15:26
  * @Copyright: 个人版权所有

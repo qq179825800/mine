@@ -1,7 +1,5 @@
 package cn.lin.code.util;
 
-
-
         import java.io.*;
         import java.util.ArrayList;
         import java.util.Collection;
@@ -11,10 +9,8 @@ package cn.lin.code.util;
         import java.util.zip.ZipOutputStream;
 /**
  * @Description:主要功能: 实现的Zip工具
- * @Prject: CommonUtilLibrary
- * @Package: com.jingewenku.abrahamcaijin.commonutil
- * @author: AbrahamCaiJin
- * @date: 2017年05月24日 18:21
+ * @author: wxl
+ * @date: 2017年09月24日 18:21
  * @Copyright: 个人版权所有
  * @Company:
  * @version: 1.0.0
