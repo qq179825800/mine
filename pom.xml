@@ -6,7 +6,10 @@
     <groupId>com.html</groupId>
     <artifactId>mine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <modules>
+        <module>common-api</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>mine</name>
     <description>Demo project for Spring Boot</description>
