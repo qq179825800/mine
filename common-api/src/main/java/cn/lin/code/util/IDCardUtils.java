@@ -2,6 +2,8 @@ package cn.lin.code.util;
 
 
 
+        import com.sun.xml.internal.ws.util.StringUtils;
+
         import java.text.ParseException;
         import java.text.SimpleDateFormat;
         import java.util.Calendar;
@@ -583,6 +585,11 @@ public class IDCardUtils {
         }
         sProvince = cityCodes.get(sProvinNum);
         return sProvince;
+    }
+
+    public static void main(String[] args) {
+        boolean blank = org.apache.commons.lang3.StringUtils.isBlank("");
+        System.out.println(blank);
     }
 
 }
