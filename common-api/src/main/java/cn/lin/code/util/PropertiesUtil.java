@@ -1,6 +1,6 @@
 package cn.lin.code.util;
 
-import cn.getgrid.common.api.configuration.UploadImgEnum;
+
 import com.alibaba.fastjson.JSON;
 
 import java.io.*;
@@ -147,7 +147,7 @@ public class PropertiesUtil {
 	 * @param prefixImg：图片前缀地址
 	 * @return
 	 */
-	public static String getPropertiesKey(){
+	/*public static String getPropertiesKey(){
 		String propertiesUrl = UploadImgEnum.IMGPRO.getMessage();
 		String imagPathUrl = UploadImgEnum.READIMGPATH.getMessage();
 		String imgUrl = UploadImgEnum.READIMGURL.getMessage();
@@ -158,12 +158,12 @@ public class PropertiesUtil {
 		String prefixImgUrl = imgPath + imgUrlPath;
 		prefixImgUrl = prefixImgUrl.trim();
 		return prefixImgUrl;
-	}
+	}*/
 	/**
 	 * 读取上传图片路径
 	 * @return
 	 */
-	public static String getUploadPropertiesKey(){
+/*	public static String getUploadPropertiesKey(){
 		String propertiesUrl = UploadImgEnum.IMGPRO.getMessage();
 		String imagPathUrl = UploadImgEnum.IMGPATH.getMessage();
 		String imgUrl = UploadImgEnum.IMGURL.getMessage();
@@ -174,7 +174,7 @@ public class PropertiesUtil {
 		String prefixImgUrl = imgPath + imgUrlPath;
 		prefixImgUrl = prefixImgUrl.trim();
 		return prefixImgUrl;
-	}
+	}*/
 
 	public static void main(String[] args) {
 

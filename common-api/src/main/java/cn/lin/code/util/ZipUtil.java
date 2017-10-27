@@ -1,5 +1,7 @@
 package cn.lin.code.util;
 
+        import org.apache.commons.io.FileUtils;
+
         import java.io.*;
         import java.util.ArrayList;
         import java.util.Collection;
@@ -293,5 +295,14 @@ public class ZipUtil{
     }
     public interface ZipListener{
         void zipProgress(int zipProgress);
+    }
+
+    public static void main(String[] args) throws Exception {
+        zipFile(new File("D:/新建文件夹"),new ZipOutputStream(FileUtils.openOutputStream(new File("D:/company.zip"))), "D:/新建文件夹/", new ZipListener() {
+            @Override
+            public void zipProgress(int zipProgress) {
+
+            }
+        });
     }
 }

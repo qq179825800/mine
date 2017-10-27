@@ -1,6 +1,6 @@
 package cn.lin.code.util;
 
-import cn.getgrid.common.api.configuration.YesNoEnum;
+
 
 import java.io.File;
 import java.sql.Timestamp;
@@ -262,7 +262,7 @@ public class TimeUtil {
 	 * 				   小于0：time1>time2; 
 	 * 				   等于0：time1=time2;
 	 */
-	public static int compareTime(String time1, Date time2){
+	/*public static int compareTime(String time1, Date time2){
 		
 		Calendar c1 = Calendar.getInstance();
 		Calendar c2 = Calendar.getInstance();
@@ -283,7 +283,7 @@ public class TimeUtil {
 		}
 		
 		return state;
-	}
+	}*/
 	
 	/**
 	 * @说明: 返回时间路径：yyMM/dd/hh,作为文件上传文件路径

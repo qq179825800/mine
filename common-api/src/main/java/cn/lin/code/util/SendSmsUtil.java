@@ -1,3 +1,4 @@
+/*
 package cn.lin.code.util;
 
 import cn.getgrid.common.api.entity.root;
@@ -11,19 +12,22 @@ import java.io.StringReader;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+*/
 /**
  * @说明：发送短信功能
  *
  * @author 张春雷
  *
  * @2016年11月22日 下午5:54:52
- */
+ *//*
+
 public class SendSmsUtil {
 
 	final static Logger logger = LoggerFactory.getLogger(SendSmsUtil.class);
 	private final static String FILE = "/mxtong_user.properties";
 
-	/**
+	*/
+/**
 	 * @说明：
 	 * @author 张春雷
 	 * @param cellPhone ：发送对象手机号
@@ -32,7 +36,8 @@ public class SendSmsUtil {
 	 * @return
 	 * @return boolean
 	 * @2016年11月22日 下午5:55:25
-	 */
+	 *//*
+
 	public static boolean sendSmsCode(String cellPhone, String sendContent, String sendTime) {
 
 		logger.info("----------sendSmsCode----------");
@@ -89,3 +94,4 @@ public class SendSmsUtil {
 	}
 
 }
+*/
