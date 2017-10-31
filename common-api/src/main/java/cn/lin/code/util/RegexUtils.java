@@ -16,12 +16,7 @@ public class RegexUtils {
     {
         Pattern pattern = Pattern.compile("\\d{1,8}([\\.]\\d{2})?");
         Matcher match = pattern.matcher(str);
-        if(match.matches()) {
-             return true;
-        }
-        else {
-             return false;
-        }
+        return match.matches();
     }
 	public static void main(String[] args) {
 		Double b = 91999999.57;

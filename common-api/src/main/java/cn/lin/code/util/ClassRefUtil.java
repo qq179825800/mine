@@ -84,8 +84,8 @@ public class ClassRefUtil {
 				if (!checkGetMet(methods, fieldGetName)) {
 					continue;
 				}
-				Method fieldGetMet = cls.getMethod(fieldGetName, new Class[] {});
-				Object fieldVal = fieldGetMet.invoke(bean, new Object[] {});
+				Method fieldGetMet = cls.getMethod(fieldGetName);
+				Object fieldVal = fieldGetMet.invoke(bean);
 				String result = null;
 				if ("Date".equals(fieldType)) {
 					result = TypeConvertUtils.date2Str((Date) fieldVal);

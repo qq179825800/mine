@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/common-api/common-pai.iml" filepath="$PROJECT_DIR$/common-api/common-pai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-api/common-api.iml" filepath="$PROJECT_DIR$/common-api/common-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-tool/common-tool.iml" filepath="$PROJECT_DIR$/common-tool/common-tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/mine.iml" filepath="$PROJECT_DIR$/mine.iml" />
     </modules>
   </component>
