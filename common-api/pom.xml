@@ -4,13 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>mine</artifactId>
-        <groupId>com.html</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>cn.lin</groupId>
+        <version>1.0.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>common-pai</artifactId>
+    <groupId>cn.lin</groupId>
+    <artifactId>common-api</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
     <dependencies>
+
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
@@ -63,6 +66,7 @@
 
     </dependencies>
     <build>
+        <!-- <finalName>getgrid-common-sdk</finalName> -->
         <plugins>
             <!-- compiler插件, 设定JDK版本 -->
             <plugin>
@@ -113,11 +117,8 @@
                                 <resource>
                                     <directory>src/main/resources/</directory>
                                     <includes>
-                                        <!-- <include>log4j.properties</include> -->
-                                        <include>motan_rpc_server.xml</include>
-                                        <include>motan_rpc_client.xml</include>
-                                        <include>motan_rpc_operation_server.xml</include>
-                                        <include>service-context.xml</include>
+                                        <include>log4j.properties</include>
+                                        <!-- <include>motan_server.xml</include> -->
                                     </includes>
                                     <filtering>true</filtering>
                                 </resource>
@@ -138,16 +139,13 @@
                         <goals>
                             <goal>jar</goal>
                         </goals>
-                        <!--<configuration>
-                            &lt;!&ndash; <classifier>lib</classifier> &ndash;&gt;
+                        <configuration>
+                            <!-- <classifier>lib</classifier> -->
                             <excludes>
-                                &lt;!&ndash; <exclude>log4j.properties</exclude> &ndash;&gt;
-                                <exclude>motan_rpc_server.xml</exclude>
-                                <exclude>motan_rpc_client.xml</exclude>
-                                <exclude>motan_rpc_operation_server.xml</exclude>
-                                <exclude>service-context.xml</exclude>
+                                <exclude>log4j.properties</exclude>
+                                <!-- <exclude>motan_server.xml</exclude> -->
                             </excludes>
-                        </configuration>-->
+                        </configuration>
                     </execution>
                 </executions>
                 <!-- 设置要执行的main方法类 -->
@@ -156,7 +154,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>cn.lin.code.util.SystemOS</mainClass>
+                            <mainClass>com.getgrid.common.sdk.dataaccess.motanclient.MotanClient</mainClass>
                         </manifest>
                         <!-- 用maven在MANIFEST.MF资料中的Class-Path中增加路径  -->
                         <manifestEntries>
@@ -164,13 +162,6 @@
                             <Class-Path>conf/</Class-Path>
                         </manifestEntries>
                     </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
                 </configuration>
             </plugin>
         </plugins>
