@@ -8,14 +8,14 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class RSAEncodeAndDecodeFile {
+public  class RSAEncodeAndDecodeFile {
     private static final String publicKey="MHwwDQYJKoZIhvcNAQEBBQADawAwaAJhAJ3u1bKMJQaDXuHnxqidQELngXVVTc4PyIzohK1j6I8UpnqaDP/6DZrmLUu+s4VjQ9eCYi8ZGAETmG+yT4upFynuGXbxwgo7EitPEaQSXY62SQGSSlftIhViqguEmnZM4wIDAQAB";
     private static final String privateKey="MIIB5QIBADANBgkqhkiG9w0BAQEFAASCAc8wggHLAgEAAmEAne7VsowlBoNe4efGqJ1AQueBdVVNzg/IjOiErWPojxSmepoM//oNmuYtS76zhWND14JiLxkYAROYb7JPi6kXKe4ZdvHCCjsSK08RpBJdjrZJAZJKV+0iFWKqC4SadkzjAgMBAAECYEtIdgVOWLfqF2iIG2J00xURVdygdR4s1+STUet1HH5X0aPPmzLJ94JHBoB8vwZuckCe6g7PNFmaBGMTFLXSBhPFSxXrm4M8meUTTVF/P4vnEyqBTDPONxkfgLCJT/C8QQIxAM4c5dVRr2uQZZ+46l1PcgnPURUeoSmsN898YkvTQvlVZplyFFZmpxIzppZqskTJ3wIxAMQooH3CZnrHVCOhF30YL+17jiQldMyxfZTyMr9Dv/U76vtUiTi0WLtHc4899Z2lfQIxAKuH1ypRocjF0h072ievrztEwrjt1bgFsCjH3lI2Tj2Meidnjk9dfNskCxaRUyz2RwIxAJ6P+KuvqQc2eV0TqtkD5Doj1hKB9JhCITF1VnAlY9XoSVpAS2v63H8GkvMHMrPsQQIwVumShXwBELMyQ1l/CVv+gPfIofOtiHwGxaWrwuRT+Huy+1DNXdDA4rZPWElvFjnz";
 
     public static void main(String[] args) throws Exception {
 
    //getEncodeFileInputStream();
-      getDecodeInputStream();
+    //  getDecodeInputStream();
 
     }
 
@@ -26,12 +26,14 @@ public class RSAEncodeAndDecodeFile {
      * @return
      * @throws Exception
      */
-    private static synchronized  FileInputStream  getEncodeFileInputStream() throws Exception {
+    public static synchronized  FileInputStream  getEncodeFileInputStream(String path) throws Exception {
         FileInputStream fis= null;
         FileOutputStream fos=null;
         try {
-            File file= new File("D:/user.xls");
-            File file1 =new File("D:/111.xls");
+            File file= new File(path);
+            String ext = path.substring(path.lastIndexOf("."));
+            String destFile =path.substring(0,path.lastIndexOf("\\"));
+            File file1 =new File(destFile+"\\密文"+ext);
             if (!file1.exists()) {
                 file1.createNewFile();
             }
@@ -79,12 +81,14 @@ public class RSAEncodeAndDecodeFile {
      * @author:wxl
      * @date: 2017/10/27 10:28
      */
-    private static synchronized FileInputStream getDecodeInputStream() throws Exception{
+    public static synchronized FileInputStream getDecodeInputStream(String path) throws Exception{
         FileInputStream fis= null;
         FileOutputStream fos=null;
         try {
-            File file= new File("D:/111.xls");
-            File file1 =new File("D:/2212.xls");
+            File file= new File(path);
+           String ext =path.substring(path.lastIndexOf("."));
+           String destFile =path.substring(0,path.lastIndexOf("\\"));
+            File file1 =new File(destFile+"\\明文"+ext);
             if (!file1.exists()) {
                 file1.createNewFile();
             }
