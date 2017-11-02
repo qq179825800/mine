@@ -68,17 +68,8 @@
     <build>
         <!-- <finalName>getgrid-common-sdk</finalName> -->
         <plugins>
-            <!-- compiler插件, 设定JDK版本 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
+
+
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <version>2.4</version>
@@ -154,7 +145,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.getgrid.common.sdk.dataaccess.motanclient.MotanClient</mainClass>
+                            <mainClass>cn.lin.code.util.SystemOS</mainClass>
                         </manifest>
                         <!-- 用maven在MANIFEST.MF资料中的Class-Path中增加路径  -->
                         <manifestEntries>
