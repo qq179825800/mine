@@ -9,6 +9,7 @@
     <modules>
         <module>common-api</module>
         <module>common-tool</module>
+        <module>file-encryption</module>
     </modules>
     <packaging>pom</packaging>
 
