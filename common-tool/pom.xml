@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
 
+	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>cn.lin</groupId>
 		<artifactId>mine</artifactId>
 		<version>1.0.0</version>
 	</parent>
-
 	<groupId>cn.lin</groupId>
-	<artifactId>file-encryption</artifactId>
+	<artifactId>common-tool</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>file-encryption</name>
+	<name>common-tool</name>
 	<description>Demo project for Spring Boot</description>
 
 
@@ -26,30 +25,27 @@
 	</properties>
 
 	<dependencies>
-		<!--<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
-		</dependency>-->
 		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.10</version>
+			<groupId>cn.lin</groupId>
+			<artifactId>common-api</artifactId>
+			<version>1.0.0</version>
+			<scope>compile</scope>
+
 		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-		</dependency>
+
+
 	</dependencies>
 
+	<!--<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>-->
 	<build>
-		<finalName>file-encryption</finalName>
+		<finalName>common-tool</finalName>
 		<plugins>
 			<!-- compiler插件, 设定JDK版本 -->
 			<plugin>
@@ -129,10 +125,10 @@
 							<!-- <classifier>lib</classifier> -->
 							<excludes>
 								<!-- <exclude>log4j.properties</exclude> -->
-								<exclude>motan_rpc_server.xml</exclude>
+								<!--<exclude>motan_rpc_server.xml</exclude>
 								<exclude>motan_rpc_client.xml</exclude>
 								<exclude>motan_rpc_operation_server.xml</exclude>
-								<exclude>service-context.xml</exclude>
+								<exclude>service-context.xml</exclude>-->
 							</excludes>
 						</configuration>
 					</execution>
@@ -143,7 +139,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>cn.lin.fileencryption.FileEncryptionApplication</mainClass>
+							<mainClass>cn.lin.commontool.CommonToolApplication</mainClass>
 						</manifest>
 						<!-- 用maven在MANIFEST.MF资料中的Class-Path中增加路径  -->
 						<manifestEntries>
