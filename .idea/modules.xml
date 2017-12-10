@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/common-tool/common-tool.iml" filepath="$PROJECT_DIR$/common-tool/common-tool.iml" />
       <module fileurl="file://$PROJECT_DIR$/file-encryption/file-encryption.iml" filepath="$PROJECT_DIR$/file-encryption/file-encryption.iml" />
       <module fileurl="file://$PROJECT_DIR$/mine.iml" filepath="$PROJECT_DIR$/mine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-demo/springboot-demo.iml" filepath="$PROJECT_DIR$/springboot-demo/springboot-demo.iml" />
     </modules>
   </component>
 </project>
