@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet"
+	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<style type="text/css">
+.layout {
+	margin: 0px auto;
+}
+</style>
+</head>
+<body>
+
+	<table class="table layout" style="width: 50%">
+		<caption>
+			<h3> 列表  </h3>
+		</caption>
+		<tr>
+			<th>编号</th>
+			<th>城市</th>
+		</tr>
+		<#if city?has_content>
+		<#list city as c>
+		<tr>
+			<td>${(c.id)!}</td>
+			<td>${(c.name)!}</td>
+		</tr>
+		</#list>
+		</#if>
+	</table>
+</body>
+</html>

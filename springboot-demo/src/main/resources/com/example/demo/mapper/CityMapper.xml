@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.CityMapper">
+	
+	<resultMap type="city" id="city">
+		<id column="CY_ID" property="id"/>
+		<id column="CY_NAME" property="name"/>
+	</resultMap>
+
+	<select id="selectAll" resultMap="city" >
+		select * from city
+	</select>
+
+</mapper> 
+ 
+ 
