@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-tool" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/file-encryption" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-demo" charset="UTF-8" />
   </component>
