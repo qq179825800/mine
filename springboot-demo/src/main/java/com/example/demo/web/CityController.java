@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.demo.pojo.City;
 import com.example.demo.service.CityService;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -28,7 +29,7 @@ public class CityController extends WebMvcConfigurerAdapter {
 	@Autowired
 	private CityService cityService;
 
-	@RequestMapping("/")
+	@RequestMapping(value = "/" ,method = RequestMethod.GET)
 	public String list(Map<String, Object> model) {
 		List<City> cities = cityService.list();
 		model.put("city", cities);
