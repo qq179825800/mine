@@ -8,6 +8,7 @@
     <version>1.0.0</version>
     <modules>
         <module>common-api</module>
+        <module>getgrid-lianpu-interface</module>
         <module>springboot-demo</module>
        <!-- <module>common-tool</module>-->
         <module>file-encryption</module>
