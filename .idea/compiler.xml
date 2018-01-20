@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-api" />
+        <module name="common-tool" />
         <module name="file-encryption" />
         <module name="springboot-demo" />
       </profile>
@@ -14,6 +15,7 @@
     <bytecodeTargetLevel>
       <module name="common-api" target="1.7" />
       <module name="common-pai" target="1.7" />
+      <module name="common-tool" target="1.7" />
       <module name="file-encryption" target="1.7" />
       <module name="mine" target="1.5" />
       <module name="springboot-demo" target="1.7" />
